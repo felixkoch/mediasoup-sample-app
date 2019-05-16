@@ -1,7 +1,9 @@
-version: "3.7"
+version: "3"
 services:
   node:
-    image: node:stretch
+    image: node:carbon
+    ports:
+      - 3000:3000
     command: tail -f /dev/null
     volumes:
       - .:/home/node/app
