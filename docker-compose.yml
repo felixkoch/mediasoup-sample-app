@@ -2,8 +2,9 @@ version: "3"
 services:
   node:
     image: node:carbon
-    ports:
-      - 3000:3000
     command: tail -f /dev/null
     volumes:
       - .:/home/node/app
+    ports:
+      - 3000:3000
+      - 10000-10100:10000-10100
